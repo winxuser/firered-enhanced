@@ -1360,3 +1360,30 @@ Text_TestMsg::
 	.include "data/text/save.inc"
 	.include "data/text/new_game_intro.inc"
 	.include "data/text/pokedude.inc"
+
+	.include "data/maps/NewBarkTown/scripts.inc"
+	.include "data/maps/NewBarkTown/text.inc"
+
+	.include "data/maps/Route29/scripts.inc"
+	.include "data/maps/Route29/text.inc"
+
+	.include "data/maps/NewBarkTownElmsLab/scripts.inc"
+	.include "data/maps/NewBarkTownElmsLab/text.inc"
+
+	.include "data/maps/Cherrygrove_City/scripts.inc"
+	.include "data/maps/Cherrygrove_City/text.inc"
+
+	.include "data/maps/Cherrygrove_City_Pokecenter_1F/scripts.inc"
+	.include "data/maps/Cherrygrove_City_Pokecenter_1F/text.inc"
+
+	.include "data/maps/CherrygroveCity_Mart/scripts.inc"
+	.include "data/maps/CherrygroveCity_Mart/text.inc"
+
+	.include "data/maps/Route30/scripts.inc"
+	.include "data/maps/Route30/text.inc"
+
+	.include "data/maps/Route30_BotanistsHouse/scripts.inc"
+	.include "data/maps/Route30_BotanistsHouse/text.inc"
+
+	.include "data/maps/Route30_MrPokemonsHouse/scripts.inc"
+	.include "data/maps/Route30_MrPokemonsHouse/text.inc"

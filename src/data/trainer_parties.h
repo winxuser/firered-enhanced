@@ -10860,3 +10860,49 @@ static const struct TrainerMonNoItemDefaultMoves sParty_CueBallPaxton[] = {
         .species = SPECIES_MUK,
     },
 };
+
+static const struct TrainerMonNoItemDefaultMoves sParty_YoungsterJoey2[] = {
+    {
+        .lvl = 4,
+        .species = SPECIES_RATTATA,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_BugCatcherWade[] = {
+    {
+        .iv = 0,
+        .lvl = 3,
+        .species = SPECIES_LEDYBA,
+    },
+    {
+        .iv = 0,
+        .lvl = 3,
+        .species = SPECIES_SPINARAK,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_YoungsterMikey[] = {
+    {
+        .iv = 10,
+        .lvl = 4,
+        .species = SPECIES_PIDGEY,
+    },
+    {
+        .iv = 10,
+        .lvl = 4,
+        .species = SPECIES_POOCHYENA,
+    }
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_BugCatcherDon[] = {
+    {
+        .iv = 10,
+        .lvl = 3,
+        .species = SPECIES_CATERPIE,
+    },
+    {
+        .iv = 10,
+        .lvl = 5,
+        .species = SPECIES_LEDYBA,
+    }
+};

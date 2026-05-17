@@ -190,8 +190,8 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
 // Unused?
-#define FLAG_0x0AF               0x0AF
-#define FLAG_0x0B0               0x0B0
+#define FLAG_RECEIVED_BOTANIST_BERRY              0x0AF
+#define FLAG_RECEIVED_MYSTERY_EGG               0x0B0
 #define FLAG_0x0B1               0x0B1
 #define FLAG_0x0B2               0x0B2
 #define FLAG_0x0B3               0x0B3
@@ -793,41 +793,51 @@
 #define FLAG_NO_ROOM_FOR_JOYFUL_GAME_CORNER_MOON_STONE   0x2FE
 #define FLAG_OAKS_RATING_IS_VIA_PC                       0x2FF
 
-// Unused?
-#define FLAG_0x300               0x300
-#define FLAG_0x301               0x301
-#define FLAG_0x302               0x302
-#define FLAG_0x303               0x303
-#define FLAG_0x304               0x304
-#define FLAG_0x305               0x305
-#define FLAG_0x306               0x306
-#define FLAG_0x307               0x307
-#define FLAG_0x308               0x308
-#define FLAG_0x309               0x309
-#define FLAG_0x30A               0x30A
-#define FLAG_0x30B               0x30B
-#define FLAG_0x30C               0x30C
-#define FLAG_0x30D               0x30D
-#define FLAG_0x30E               0x30E
-#define FLAG_0x30F               0x30F
-#define FLAG_0x310               0x310
-#define FLAG_0x311               0x311
-#define FLAG_0x312               0x312
-#define FLAG_0x313               0x313
-#define FLAG_0x314               0x314
-#define FLAG_0x315               0x315
-#define FLAG_0x316               0x316
-#define FLAG_0x317               0x317
-#define FLAG_0x318               0x318
-#define FLAG_0x319               0x319
-#define FLAG_0x31A               0x31A
-#define FLAG_0x31B               0x31B
-#define FLAG_0x31C               0x31C
-#define FLAG_0x31D               0x31D
-#define FLAG_0x31E               0x31E
-#define FLAG_0x31F               0x31F
-#define FLAG_0x320               0x320
-#define FLAG_0x321               0x321
+// Johto Expansion Flags (0x300 - 0x3D7)
+#define FLAG_ARRIVED_IN_JOHTO                    0x300
+#define FLAG_TALKED_TO_MOM_POST_GAME             0x301
+#define FLAG_MET_PROF_ELM                        0x302
+
+// Starter Selection (Hide/Show balls in Elm's Lab)
+#define FLAG_HIDE_CHIKORITA_BALL                 0x303
+#define FLAG_HIDE_CYNDAQUIL_BALL                 0x304
+#define FLAG_HIDE_TOTODILE_BALL                  0x305
+#define FLAG_GOT_JOHTO_STARTER                   0x306
+
+// Town Arrival Flags (Useful for map-popups or first-time scripts)
+#define FLAG_VISITED_NEW_BARK_TOWN               0x307
+#define FLAG_VISITED_CHERRYGROVE_CITY            0x308
+#define FLAG_VISITED_VIOLET_CITY                 0x309
+#define FLAG_VISITED_AZALEA_TOWN                 0x30A
+#define FLAG_VISITED_GOLDENROD_CITY              0x30B
+#define FLAG_VISITED_ECRUTEAK_CITY               0x30C
+#define FLAG_VISITED_OLIVINE_CITY                0x30D
+#define FLAG_VISITED_CIANWOOD_CITY               0x30E
+#define FLAG_VISITED_MAHOGANY_TOWN               0x30F
+#define FLAG_VISITED_BLACKTHORN_CITY             0x310
+
+// Johto Gym Leader Defeat Flags
+#define FLAG_DEFEATED_FALKNER                    0x311
+#define FLAG_DEFEATED_BUGSY                      0x312
+#define FLAG_DEFEATED_WHITNEY                    0x313
+#define FLAG_DEFEATED_MORTY                      0x314
+#define FLAG_DEFEATED_CHUCK                      0x315
+#define FLAG_DEFEATED_JASMINE                    0x316
+#define FLAG_DEFEATED_PRYCE                      0x317
+#define FLAG_DEFEATED_CLAIR                      0x318
+
+// Story Beats & Expansion Progression
+#define FLAG_RECEIVED_EGG_FROM_ELM_AIDE          0x319
+#define FLAG_CLEARED_SLOWPOKE_WELL               0x31A
+#define FLAG_RESCUED_FARFETCHD                   0x31B
+#define FLAG_GOT_SQUIRT_BOTTLE                   0x31C
+#define FLAG_DEFEATED_SUDOWOODO                  0x31D
+#define FLAG_DEFEATED_RED_GYARADOS               0x31E
+#define FLAG_CLEARED_RADIO_TOWER                 0x31F
+
+// Unsed?
+#define FLAG_ACCEPTED_JOHTO_JOURNEY              0x320
+#define FLAG_WORLD_MAP_CHERRYGROVE_CITY_POKEMON_CENTER_1F               0x321
 #define FLAG_0x322               0x322
 #define FLAG_0x323               0x323
 #define FLAG_0x324               0x324

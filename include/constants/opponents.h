@@ -746,6 +746,10 @@
 #define TRAINER_CHAMPION_REMATCH_BULBASAUR       740
 #define TRAINER_CHAMPION_REMATCH_CHARMANDER      741
 #define TRAINER_CUE_BALL_PAXTON                  742
+#define TRAINER_YOUNGSTER_JOEY_2                 743
+#define TRAINER_BUG_CATCHER_WADE                 744
+#define TRAINER_YOUNGSTER_MIKEY                  745
+#define TRAINER_BUG_CATCHER_DON                  746
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is 
 //       only space for 25 additional trainers before trainer flag space overflows.

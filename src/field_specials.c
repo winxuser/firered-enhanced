@@ -2553,3 +2553,41 @@ static void Task_WingFlapSound(u8 taskId)
     if (data[0] == gSpecialVar_0x8004 - 1)
         DestroyTask(taskId);
 }
+
+// Useage with johto script
+void StoreAllNonStarterPokemon(void)
+{
+    int i, boxNo, boxPos;
+    struct BoxPokemon* checkingMon;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE)
+        {
+            // Manual storage logic since SendMonToPC is static
+            boxNo = StorageGetCurrentBox();
+            do
+            {
+                for (boxPos = 0; boxPos < IN_BOX_COUNT; boxPos++)
+                {
+                    checkingMon = GetBoxedMonPtr(boxNo, boxPos);
+                    if (GetBoxMonData(checkingMon, MON_DATA_SPECIES) == SPECIES_NONE)
+                    {
+                        // Restore PP and copy the Mon to the Box
+                        MonRestorePP(&gPlayerParty[i]);
+                        BoxMonRestorePP(checkingMon); // Standard cleanup
+                        CopyMon(checkingMon, &gPlayerParty[i].box, sizeof(struct BoxPokemon));
+
+                        // Clear the party slot
+                        ZeroMonData(&gPlayerParty[i]);
+                        goto NextPartyMember; // Break out of box loop to next party slot
+                    }
+                }
+                boxNo = (boxNo + 1) % TOTAL_BOXES_COUNT;
+            } while (boxNo != StorageGetCurrentBox());
+        }
+        NextPartyMember:;
+    }
+    CompactPartySlots();
+    CalculatePlayerPartyCount();
+}
