@@ -1387,3 +1387,9 @@ Text_TestMsg::
 
 	.include "data/maps/Route30_MrPokemonsHouse/scripts.inc"
 	.include "data/maps/Route30_MrPokemonsHouse/text.inc"
+
+	.include "data/maps/Route31/scripts.inc"
+	.include "data/maps/Route31/text.inc"
+
+	.include "data/maps/Dark_Cave/scripts.inc"
+	.include "data/maps/Dark_Cave/text.inc"
