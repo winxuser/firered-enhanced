@@ -441,9 +441,39 @@ PalletTown_EventScript_SignLadyShowSign::
 	normalmsg
 	return
 
-PalletTown_EventScript_SignLadyStartShowSign::
-	applymovement LOCALID_PALLET_SIGN_LADY, Common_Movement_FacePlayer
-	waitmovement 0
-	call PalletTown_EventScript_SignLadyShowSign
+	PalletTown_EventScript_EventItemGuy::
+	lock
+	faceplayer
+	goto_if_set FLAG_OBTAINED_ALL_EVENT_ITEMS, PalletTown_EventScript_AlreadyGiven
+	msgbox PalletTown_Text_EventItemIntro, MSGBOX_DEFAULT
+	giveitem ITEM_AURORA_TICKET, 1
+	giveitem ITEM_MYSTIC_TICKET, 1
+	setflag FLAG_OBTAINED_ALL_EVENT_ITEMS
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+	msgbox PalletTown_Text_EventItemEnjoy, MSGBOX_DEFAULT
 	release
 	end
+
+	PalletTown_EventScript_AlreadyGiven::
+	msgbox PalletTown_Text_EventItemOutgoing, MSGBOX_DEFAULT
+	release
+	end
+
+	PalletTown_Text_EventItemIntro:
+	.string "Ah, hello there. I used to travel far and\n"
+	.string "wide attending official trainer events...\n"
+	.string "back when they were still being held.\n"
+	.string "I'm simply not in the position to go to\n"
+	.string "those wondrous places anymore.\n"
+	.string "It would break my heart for these to\n"
+	.string "collect dust. Please, take these tickets!$"
+
+	PalletTown_Text_EventItemEnjoy:
+	.string "Those will grant you access to the special\n"
+	.string "islands via the ferry. Go out there and\n"
+	.string "experience what I no longer can!$"
+
+	PalletTown_Text_EventItemOutgoing:
+	.string "How are your travels going? I hope those\n"
+	.string "tickets are taking you to amazing places!$"
